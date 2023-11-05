@@ -1,0 +1,6 @@
+2023-11-05 09:41:55,496 - INFO - --- Program started ---
+2023-11-05 09:43:01,995 - INFO - --- Program started ---
+2023-11-05 09:43:03,529 - INFO - Cardid = 011 | result = Passed
+2023-11-05 09:43:06,101 - INFO - Cardid = 0111 | result = Failed
+2023-11-05 09:43:09,569 - INFO - Cardid = 01 | result = Failed
+2023-11-05 09:43:11,065 - INFO - Cardid = 011 | result = Passed

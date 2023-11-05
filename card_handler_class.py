@@ -1,4 +1,5 @@
 import os
+import logging
 
 '''
     Osztály definíció
@@ -13,9 +14,12 @@ class card_handler:
             Visszaadott értékek:
             Semmit nem ad vissza
         """
-        self.file_name = file_name
+        self.file_name = file_name + ".txt"
         self.card_list = []
         self._cached_stamp = 0
+        logging.basicConfig( level = logging.INFO, filename = file_name + '.log', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
+        logging.info("--- Program started ---")
+
 
     
     def read_card_file(self):
@@ -54,8 +58,14 @@ class card_handler:
             False: Nem talált ilyen számú kártyát
         """
         self.read_card_file()
+        ret_bool = False
+        log_string = "Failed"
         for i in self.card_list:
             if cardString == i:
-                return True
-        return False
+                ret_bool = True
+                log_string = 'Passed'
+        
+        logging.info("Cardid = " + cardString + " | result = " + log_string)
+
+        return ret_bool
     

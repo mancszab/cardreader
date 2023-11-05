@@ -19,7 +19,7 @@ from card_handler_class import card_handler
 
 cardList = []
 
-ch = card_handler('./cards.txt')
+ch = card_handler('./cards')
 
 def logging (card):
         with open('log.txt','a') as f:
