@@ -5,11 +5,13 @@ import logging
     Osztály definíció
 '''
 class card_handler:
-    def __init__(self, file_name = './cards.txt'):
+    def __init__(self, file_name = './cards'):
         """Konstruktor
 
             Paraméterek:
-            File neve amiben a kártya számok vannak eltárolva
+            filenév amiben a kártya számok vannak eltárolva. FIGYELEM! Csak az alapnevet kell megadni!
+                - filenév.txt -ben fogja keresni a kártyaadatokat
+                - filenév.log -ba fogja logolni az eseményeket
 
             Visszaadott értékek:
             Semmit nem ad vissza
