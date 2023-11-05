@@ -33,7 +33,10 @@ while True:
     olvasott_kartya = input ('Kerem a Kartyat')
     print('*' + olvasott_kartya + '*')
 
-    print(ch.check_card(olvasott_kartya))
+    if ch.check_card(olvasott_kartya):
+         pass
+    else:
+         pass
 
 
         
